@@ -4,15 +4,9 @@ using UnityEngine;
 
 namespace Enemy
 {
-    public class Enemy : MonoBehaviour
+    public class Enemy : ObjectSpawn
     {
-        private void OnCollisionEnter2D(Collision2D collision)
-        {
-           if(!collision.gameObject.TryGetComponent(out Enemy enemy))
-            {
-                gameObject.SetActive(false);
-            }
-        }
+       
     }
 }
 
